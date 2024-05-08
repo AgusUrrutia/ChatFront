@@ -1,0 +1,17 @@
+<h1 *ngFor="let msg of messages">
+
+    {{msg}}
+
+</h1>
+
+
+<form (ngSubmit)="sendMessage()">
+    <input type="text" [(ngModel)]="textoIngresado" name="texto">
+    <button type="submit">Enviar</button>
+</form>
+<button (click)="escojerNombre('Agustin')">Escojer nombre Agustin</button>
+<button (click)="escojerNombre('Lucas')">Escojer nombre Lucas</button>
+
+<!-- <button (click)="sendMessage()">Enviar message</button> -->
+
+
